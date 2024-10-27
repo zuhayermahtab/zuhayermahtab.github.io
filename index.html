@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #hero {
+            text-align: center;
+            background: #f5f6fa;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .research-item, .publication {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <img src="/api/placeholder/200/200" alt="Your Profile Picture" class="profile-img">
+        <h1>Your Name</h1>
+        <p>Research Focus Area | University Name</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Replace this with a brief introduction about yourself, your research interests, and academic background.</p>
+    </section>
+
+    <section id="research">
+        <h2>Current Research</h2>
+        <div class="research-item">
+            <h3>Research Project 1</h3>
+            <p>Description of your research project, methodology, and findings.</p>
+        </div>
+        <div class="research-item">
+            <h3>Research Project 2</h3>
+            <p>Description of your research project, methodology, and findings.</p>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication">
+            <h3>Publication Title 1</h3>
+            <p>Authors, Journal Name, Year</p>
+            <p>Brief description or abstract of the publication.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="research-item">
+            <h3>Education</h3>
+            <p>Ph.D. in [Field], University Name, Year</p>
+            <p>M.S. in [Field], University Name, Year</p>
+        </div>
+        <div class="research-item">
+            <h3>Experience</h3>
+            <p>Position Title, Institution, Year-Year</p>
+            <p>Description of responsibilities and achievements</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: your.email@university.edu</p>
+            <p>Office: Building Name, Room ###</p>
+        </div>
+    </section>
+</body>
+</html>
