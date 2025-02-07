@@ -1,0 +1,37 @@
+1.	The Ridesharing Routing Problem with Flexible Pickup and Drop-off Points
+In major metropolitan areas such as Los Angeles County, ride-sharing systems can help re-
+duce traffic congestion and increase the transportation system’s efficiency. In this paper, we
+propose a Branch-and-Price based approach for solving the ride-share routing problem with
+flexible pickup and drop-off points. We assume a ride-sharing system where drivers have their
+own origins and destinations, where all the drivers’ and passengers’ information is known before-
+hand, and all the network information is static and deterministic. We assume that drivers can
+pick up or drop off passengers from or to flexible meeting points that are within a passenger’s
+walking time limit from their origin or destination and are determined on a continuous plane.
+We formulate a mixed integer nonlinear model for routing and selecting pickup and drop-off
+points. Our solution approach decomposes this problem in two: selecting pickup and drop-off
+points and a rideshare routing problem. We develop an efficient algorithm to select the best
+pickup and drop-off points and show computationally that it is more efficient at finding pickup
+and drop-off points on a network than considering a fixed set of discrete meeting points. To
+evaluate the performance of our approach, we perform numerical experiments on a San Francisco
+Taxicab dataset. Results show that our approach is efficient, solving instances with up to 600
+nodes within 31 CPU minutes. For these datasets, incorporating flexible pickup and drop-off
+points can reduce the total vehicle travel time of the rideshare system by 4% on average.
+2.	Stochastic Rideshare System with Uncertain Travel Times and Passenger Cancellations
+Ridesharing can help reduce traffic congestion, greenhouse gas emissions and increase accessi-
+bility to transportation in major metropolitan areas across the United States. A robust rideshare
+system needs to take uncertainties such as traffic congestion and passenger cancellations into
+account. In this paper, we propose a data-driven stochastic rideshare system that integrates
+those sources of uncertainties. Instead of assuming a probability distribution, the approach
+learns the underlying distribution in travel times and passenger cancellations from historical
+data. We first provide a mathematical model of the problem. Later we propose a stochastic
+average approximation approach for solving the routing and flexible pickup and drop-off selec-
+tion problem. We also propose a Branch-and-Price heuristic and Adaptive Large Neighborhood
+Search-based metaheuristic to solve the underlying rideshare routing problem. To validate the
+approach, we construct test cases based on the New York City taxicab dataset. Numerical
+results show that the proposed branch and price-based solution approach can efficiently solve
+small instances while, the ALNS-based approach can solve medium to large instances with a
+small computational time budget while being robust to uncertainties. The proposed approaches
+can help transportation officials and rideshare planners design more robust rideshare systems
+to alleviate traffic congestion.
+3.	Real-Time Large-Scale Ridesharing with Flexible Meeting Points.
+In this report, we propose an online and large-scale rideshare system that can dynamically match passenger requests with drivers and provide efficient routes to the drivers. We developed a greedy insertion-based routing procedure to route thousands of requests in an hour. We incorporated flexible meeting point selection into our framework, which can reduce travel distances for both drivers and passengers. We implemented an online incentive and cost-sharing system that can incentivize drivers and passengers for their ride time limit violations and share the cost of a rideshare trip among the passengers fairly. We incorporated a request prediction and detour mechanism into our ridesharing framework. To get the most updated travel time and study the effects of ridesharing in a road network, we also incorporate a simulation approach into our framework. Numerical experiments performed on the New York Taxicab dataset and a rural dataset based on Kern and Tulare Counties, California, show that our proposed framework is effective, matching thousands of requests per hour. Results also show that ridesharing can cost significantly less compared to ride-hailing services such as Uber or Lyft, and incorporating flexible meeting points can reduce travel distance by 4% on average. Simulation studies show that ridesharing can reduce total vehicle miles traveled by 13% in Manhattan on average. Our proposed framework can help transportation officials design real-time and city-scale rideshare systems to alleviate traffic congestion problems in California.
