@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuhayer Mahtab - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            line-height: 1.7;
+            color: #2c2c2c;
+            background-color: #fafafa;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 1.5rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        nav a {
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #666666;
+        }
+
+        section {
+            padding: 6rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        #hero {
+            text-align: center;
+            background: #ffffff;
+            padding-top: 8rem;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .research-item, .publication {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .research-item:hover, .publication:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .publication h3 a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .publication h3 a:hover {
+            color: #666666;
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="/Zuhayer_Mahtab_Resume_OR_PT.pdf" target="_blank">Resume</a></li>
+            <li><a href="https://scholar.google.com/citations?user=1234567890&hl=en">Research Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <img src="profile_pic.jpeg" alt="Your Profile Picture" class="profile-img">
+        <h1>Zuhayer Mahtab</h1>
+        <p>Operations Research Analyst and Industrial Engineer | University of Southern California</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I am Zuhayer Mahtab. I am a Ph.D. candidate at the University of Southern California. My research interests include linear and combinatorial optimization and their applications in transportation and manufacturing systems and supply chains. I have expertise in process optimization, simulation, and data analysis. My advisor is <a href="https://sites.usc.edu/maged/">Dr. Maged Dessouky</a>. I have a M.S. in Operations Research from the University of Southern California and a B.Sc. in Industrial and Production Engineering from the Bangladesh University of Engineering and Technology. You can find my latest resume <a href="/Zuhayer_Mahtab_Resume_OR_PT.pdf">here</a>. I am currently looking for opportunities in operations research, industrial engineering, and data analysis. You can contact me at <a href="mailto:mahtabzuhayer@gmail.com">mahtabzuhayer@gmail.com</a>.</p>
+    </section>
+
+    <section id="research">
+        <h2>Current Research</h2>
+        <div class="research-item">
+            <h3>The Ridesharing Routing Problem with Flexible Pickup and Drop-off Points</h3>
+            <p>Developed a Branch-and-Price based approach for solving the ride-share routing problem with flexible pickup and drop-off points. The key innovation is an efficient algorithm for selecting optimal meeting points on a continuous plane, rather than using fixed discrete points. Testing on San Francisco Taxicab data showed that this approach can reduce total vehicle travel time by 4% and efficiently solve instances with up to 600 nodes.</p>
+        </div>
+        <div class="research-item">
+            <h3>Stochastic Rideshare System with Uncertain Travel Times and Passenger Cancellations</h3>
+            <p>Proposed a data-driven stochastic rideshare system that handles uncertainties in traffic congestion and passenger cancellations. The approach uses historical data to learn travel time and cancellation patterns, rather than assuming probability distributions. Developed both a Branch-and-Price heuristic and an Adaptive Large Neighborhood Search-based metaheuristic, validated using New York City taxicab data.</p>
+        </div>
+        <div class="research-item">
+            <h3>Real-Time Large-Scale Ridesharing with Flexible Meeting Points</h3>
+            <p>Designed an online, large-scale rideshare system featuring dynamic matching, flexible meeting points, and real-time incentive/cost-sharing mechanisms. The system includes request prediction and network simulation capabilities. Testing on New York Taxicab data and rural California datasets demonstrated significant cost reductions compared to traditional ride-hailing services and a 13% reduction in total vehicle miles traveled in Manhattan.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="research-item">
+            <h3>Airline Delay Analysis Dashboard</h3>
+            <p>Created an interactive dashboard to analyze and visualize airline delay patterns and trends across 2023-2024.</p>
+            <div class='tableauPlaceholder' id='viz1740627345801' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Airline Delay Data 2023-2024' src='https://public.tableau.com/static/images/3T/3T6TGZMWG/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path' value='shared/3T6TGZMWG' />
+                    <param name='toolbar' value='yes' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-GB' />
+                </object>
+            </div>
+        </div>
+        <div class="research-item">
+            <h3>Simulation Optimization of a Fortune-500 Manufacturing Company</h3>
+            <img src="projects/model.png" alt="Simulation Optimization of a Fortune-500 Manufacturing Company" class="project-image">
+            <p>Designed a simulation model of a complex manufacturing process and used it to optimize the production process by line balancing. The outputs of the simulation were analyzed to identify bottlenecks and improve critical KPIs such as utilization, queue times and throughput.</p>
+
+        </div>
+        <div class="research-item">
+            <h3>Simulation Optimization of a Dairy Plant Manufacturing Process</h3>
+            <p>Gathered extensive data directly from the production floor of a dairy plant and used it to simulate the manufacturing process. The simulation model was used in conjunction with OptQuest (the simulation optimization toolbox) to maximize the production rate of UHT and pasteurized milk processes.</p>
+            <video 
+                width="100%" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                style="border-radius: 5px; margin-top: 1rem;">
+                <source src="projects/simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication">
+            <h3><a href="/pdfs/mahtab2022multi.pdf" target="_blank">Multi-objective robust-stochastic optimisation of relief goods distribution under uncertainty: A real-life case study</a></h3>
+            <p><b>Mahtab, Z.</b>, Azeem, A., Ali, S. M., Paul, S. K., & Fathollahi-Fard, A. M. (2022)</p>
+            <p><i>International Journal of Systems Science: Operations & Logistics, 9</i>(2), 241-262</p>
+        </div>
+        
+        <div class="publication">
+            <h3><a href="/pdfs/chowdhury2020hierarchical.pdf" target="_blank">A hierarchical model for critical success factors in apparel supply chain</a></h3>
+            <p>Chowdhury, N. A., Ali, S. M., Paul, S. K., <b>Mahtab, Z.</b>, & Kabir, G. (2020)</p>
+            <p><i>Business Process Management Journal, 26</i>(7), 1761-1788</p>
+        </div>
+
+        <div class="publication">
+            <h3><a href="/pdfs/ali2020barriers.pdf" target="_blank">Barriers to lean six sigma implementation in the supply chain: An ISM model</a></h3>
+            <p>Ali, S. M., Hossen, M. A., <b>Mahtab, Z.</b>, Kabir, G., & Paul, S. K. (2020)</p>
+            <p><i>Computers & Industrial Engineering, 149</i>, 106843</p>
+        </div>
+
+        <div class="publication">
+            <h3><a href="/pdfs/rabbi2020green.pdf" target="_blank">Green supply chain performance prediction using a Bayesian belief network</a></h3>
+            <p>Rabbi, M., Ali, S. M., Kabir, G., <b>Mahtab, Z.</b>, & Paul, S. K. (2020)</p>
+            <p><i>Sustainability, 12</i>(3), 1101</p>
+        </div>
+
+        <div class="publication">
+            <h3><a href="/pdfs/chowdhury2022hierarchical.pdf" target="_blank">A hierarchical model for investigating the driving and dependence power of supply chain risks in the readymade garment industry</a></h3>
+            <p>Chowdhury, N. A., Ali, S. M., <b>Mahtab, Z.</b>, Rahman, T., Kabir, G., & Paul, S. K. (2019)</p>
+            <p><i>Journal of Retailing and Consumer Services, 51</i>, 102-113</p>
+        </div>
+
+        <div class="publication">
+            <h3><a href="/pdfs/munny2019enablers.pdf" target="_blank">Enablers of social sustainability in the supply chain: An example of footwear industry from an emerging economy</a></h3>
+            <p>Munny, A. A., Ali, S. M., Kabir, G., Moktadir, M. A., Rahman, T., & <b>Mahtab, Z.</b> (2019)</p>
+            <p><i>Sustainable Production and Consumption, 20</i>, 230-242</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:mahtabzuhayer@gmail.com">mahtabzuhayer@gmail.com</a></p>
+            <p>Work Email: <a href="mailto:mahtab@usc.edu">mahtab@usc.edu</a></p>
+            <p>Office: Gerontology Center, 206, University of Southern California, Los Angeles, CA 90007</p>
+        </div>
+    </section>
+</body>
+</html>
